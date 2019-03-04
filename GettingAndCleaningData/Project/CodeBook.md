@@ -15,15 +15,15 @@ The attached R script (run_analysis.R) performs the following to clean up the da
 * Training and test sets are then merged to create one data set
 * Only the measurements on the mean and standard deviation were extracted for each measurement, and the others are discarded.
 * Using the activity_labels.txt, activity identifiers are modified with descriptive names.
-  WALKING
-  WALKINGUPSTAIRS
-  WALKINGDOWNSTAIRS  
-  SITTING
-  STANDING  
-  LAYING  
+  - WALKING
+  - WALKINGUPSTAIRS
+  - WALKINGDOWNSTAIRS  
+  - SITTING
+  - STANDING  
+  - LAYING  
 * Then the activity names are renamed with more descriptive names with below operations
-** special characters are remove, like (,),-
-** The initial f and t were expanded to frequencyDomain and timeDomain respectively.
-** Acc, Gyro, Mag, Freq, mean, and std were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
-** Replaced BodyBody with Body.
+  - special characters are remove, like (,),-
+  - The initial f and t were expanded to frequencyDomain and timeDomain respectively.
+  - Acc, Gyro, Mag, Freq, mean, and std were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
+- Replaced BodyBody with Body.
 * The final data set was created with the average of each variable for each activity and each subject.
